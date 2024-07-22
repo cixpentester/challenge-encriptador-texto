@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptar/Desencriptar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <h2>Ingrese el texto aquí</h2>
+            <textarea id="inputText" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="buttons">
+                <button onclick="encrypt()">Encriptar</button>
+                <button onclick="decrypt()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="output-section">
+            <img src="img/diamond.png" alt="Imagen">
+            <p id="outputMessage">Ningún mensaje fue encontrado</p>
+            <button onclick="copyText()">Copiar</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
